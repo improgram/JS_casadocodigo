@@ -27,8 +27,7 @@ header {
     display: flex; /*menu lado a lado */
     justify-content: space-between; /*Utiliza todo espaço disponivel*/
     align-items: center; /* Alinhamento vertical*/
-    font-size: clamp(0.1em, 1.3em + 1vw, 5em) /* Valores min, desejavel e max */
-    
+    font-size: clamp(0.1em, 1.3em + 1vw, 5em) /* Valores min, desejavel e max */  
 }
 
 /*
@@ -69,12 +68,8 @@ header {
     text-align: center; 
 }
 
-#intro img {
-    align-items: center;
-}
-
 .container {
-    padding: 10px; /* espaço da section para as margens */
+    padding: 2px; /* espaço da section para as margens */
     text-align: center;
     display: flex; /* Lado a lado */
     flex-wrap: wrap; /* Quebra de linha  e row (padrao)*/
@@ -85,15 +80,14 @@ header {
 .btn {
     background-color:rgba(12, 12, 2, 0.452);
     color: rgb(250, 250, 248);
-    font-size: 18px;
     border: 1px solid rgb(183, 179, 199);
     border-radius: 12px;
-    /*padding: 6px; /* espaço interno do botao */
     cursor: pointer;
-    transition: all 0.5s;
-    overflow: hidden;
-    margin: 10px 0;
-    font-weight: 600;/* Negrito */
+    font-weight: 600; /* Negrito */
+    width: 180px; /*Largura dos botoes*/
+    height: 90px; /* Altura dos botoes */
+    margin: 2px /*espaço entre os botoes*/  
+    /*padding: 6px; espaço interno do botao */ 
 }
 
 .btn:hover {
@@ -102,11 +96,9 @@ header {
 
 .btn:before {
     content: "";
-    position: absolute;
+    position: absolute; /*texto dos botoes*/
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background: rgb(0, 165, 124);
     z-index: -1;
     border-radius: 0 0 50% 50%;
@@ -120,75 +112,63 @@ header {
 }*/
 
 #batimentos {
-    width: 380px;
-    height: 180px;
     background-image: url("https://cdn.pixabay.com/photo/2018/04/12/04/26/blood-pressure-3312513_960_720.png");
     background-size: cover; /* contain */
     display: flex;
     align-items: flex-end;
-    font-size: 32px;
+    font-size: 16px;
 }
 
-#copas {
-    width: 380px;
-    height: 180px;
+#copas { 
     background-image: url("https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/ad7523a3d1a139039d9a33bdd76a9ddf.jpg");
     background-size: cover;
     color: rgb(0, 0, 158);
-    font-size: 22px;
+    font-size: 10px;
     display: flex;
     align-items: flex-start;
 }
 
 #olimpiadas {
-    width: 380px;
-    height: 180px;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6d/2020_Summer_Olympics_text_logo.svg");
     background-size: cover;
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
 }
 
 #tabuada {
-    width: 380px;
-    height: 180px;
     background-image: url("https://geniodamatematica.com.br/wp-content/uploads/2019/04/multiplicacao-tabela-de-pitagoras.png");
     background-size: cover;
     /*color: rgb(0, 0, 158);*/
     color: tomato;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 20px;
 }
 
 #combustiveis {
-    width: 380px;
-    height: 180px;
     background-image: url("https://cdn.pixabay.com/photo/2016/08/15/22/20/fuel-1596622__340.jpg");
     background-size: cover;
     font-family: trebuchet MS;
     display: flex;
     align-items: flex-end;
-    font-size: 30px;
+    font-size: 12px;
 }
 
 #mediaIdade {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     background-image: url("https://cdn.pensador.com/img/imagens/le/ge/legendas_para_foto_com_familia_f_l.jpg");
 /*https://cdn.pixabay.com/photo/2016/04/01/08/58/boy-1299084_960_720.png*/
 /*https://cdn.pixabay.com/photo/2017/08/08/15/37/family-2611748_960_720.jpg*/
 /*https://cdn.pixabay.com/photo/2020/10/29/15/32/beach-5696492_960_720.jpg*/
+    color: rgba(0, 0, 255, 0.767);
     display: flex;
     align-items: flex-initial;
     justify-content: center;
-    font-size: 26px;
-    color: rgba(0, 0, 255, 0.767);
+    font-size: 16px; 
 }
 
 #adivinharNumero {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color: rgb(225, 250, 0);
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/ee/Numbers.gif");
@@ -197,69 +177,56 @@ header {
     display: flex;
     align-items: flex-initial;
     justify-content: center;
-    font-size: 28px;
+    font-size: 16px;
 }
 
 #linhaColuna {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     background-image: url("https://cdn.pixabay.com/photo/2013/03/13/04/24/building-93098_960_720.jpg");
-
 }
 
 #megaSena {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color: rgb(255, 0, 43);
-    font-size: 30px;
+    font-size: 20px;
     text-align: end;
     /*background-image: url("https://media.istockphoto.com/photos/lottery-balls-picture-id1054934320?s=612x612");*/
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Bolas-de-loteria.jpg");
 }
 
 #canvas {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     background-image: url("https://cdn.pixabay.com/photo/2018/03/21/07/16/learning-3245792_960_720.jpg");
     color: red;
-    font-size: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-end;
 }
 
 #damas {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     background-image: url("https://cdn.pixabay.com/photo/2018/02/25/10/21/pattern-3180129_960_720.jpg");
     color: rgb(196, 12, 12);
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #bandeiras {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color: red;
     background-image: url("https://cdn.pixabay.com/photo/2017/07/11/18/07/bolivia-2494518_960_720.jpg");
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     align-items: flex-initial;
     justify-content: center;
 }
 
 #canvasCondicionais {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color: blue;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvRQXSfdIS62ICCa9p0-MQeSaJSQSzaTtCUQ&usqp=CAU");
 }
 
 #canvasCrescente {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color: red;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/Tabela_Crescimento_Meninas.svg");
@@ -267,127 +234,109 @@ header {
 }
 
 #canvasParabola {
-    width: 380px;
-    height: 180px;
     background-size: contain; /*imagem tamanho certo para a caixa*/
     background-image: url("https://slidetodoc.com/presentation_image_h/28125f7d925d269b189d7980046e949c/image-12.jpg");
     display: flex;
     align-items: flex-initial;
     justify-content: center;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 #seno {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color: red;
     background-image: url("https://cdn.pixabay.com/photo/2015/10/15/09/09/mathematics-989124_960_720.jpg");
 }
 
 #cliques {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color: red;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/32/Sunjang_Baduk_starting_position.png");
     display: flex;
     align-items: flex-initial;
     justify-content: center;
-    font-size: 26px;
+    font-size: 18px;
 }
 
 #botaoMouse {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     background-image: url("https://cdn.pixabay.com/photo/2017/09/26/22/23/dark-green-2790337_960_720.png");
     display: flex;
     align-items: flex-initial;
     justify-content: center;
-    font-size: 26px;
+    font-size: 18px;
 }
 
 #paint {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color: red;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f9/Gif2.gif");
-    font-size: 26px;
+    font-size: 18px;
 }
 
 #animacoes {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/de/Geostationary_orbit_animation.gif");
     display: flex;
     align-items: flex-initial;
     justify-content: center;
-    font-size: 26px;
+    font-size: 18px;
 }
 
 #tiroAlvo {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color: blue;
     background-image: url("https://media.istockphoto.com/vectors/hitting-the-target-vector-id1310235449?s=612x612");
     display: flex;
     align-items: flex-initial;
     justify-content: center;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 #formEventos {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color: red;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/84/Keycloakify.gif");
     display: flex;
     align-items: flex-initial;
     justify-content: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #formArray {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     background-image: url("https://cdn.pixabay.com/photo/2017/02/25/23/42/racism-2099029_960_720.png");
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #objetos {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4cw-kxwEH9frdwHQTSiOJcMeCxtbUZN04kw&usqp=CAU");
     display: flex;
     align-items: flex-initial;
     justify-content: center;
-    font-size: 30px;
+    font-size: 20px;
     color: rgba(231, 231, 65, 0.938);
 }
 
 #dom {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color: red;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQEt8uEEJWGjOqmjRAAceQ1lQO68C_g9aHg&usqp=CAU");
-    font-size: 22px;
+    font-size: 20px;
 }
 
 #imc {
-    width: 380px;
-    height: 180px;
     background-size: cover;
     color:red;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiDOCyM2r8w2Nccj58-m15DrNLC_mqeP1_BA&usqp=CAU");
-    font-size: 26px;
+    font-size: 20px;
+}
+
+#object {
+    outline: 2px groove gold;   /*contorno*/
+    width: 380px;
+    height: 240px;
 }
 
 .footer {

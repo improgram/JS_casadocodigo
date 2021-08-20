@@ -1,3 +1,16 @@
+function object() { 
+    let object = document.createElement('object');
+    object.text = '\n TESTE OBJECT';
+    object.setAttribute('a', "Resultado");
+    object.id = "object" /* Igual a setAttribute('className', "object")*/
+    console.log('TESTE OBJECT');
+    object.insertAdjacentHtml("afterEnd", buttonBatimentos);
+}
+
+//beforebegin = Antes do element
+//afterbegin = Dentro do element e antes do primeiro filho
+//beforeEnd = Dentro do element e apos seu ultimo filho
+//afterEnd = Após o element
 
 // Calculo Batimentos
 let buttonBatimentos = document.getElementById("batimentos");
@@ -16,6 +29,8 @@ function batimentos () {
         
     buttonBatimentos.insertAdjacentHTML("beforeEnd", calcBatimentos);
     buttonBatimentos.insertAdjacentElement("afterEnd", codBatimentos);
+
+    object();
 }
 
 // Anos de Copa
@@ -120,11 +135,6 @@ let buttonTabuada2 = document.createElement('button');
         buttonTabuada.insertAdjacentHTML("afterEnd", resposta);
     }
 
-//beforebegin = Antes do element
-//afterbegin = Dentro do element e antes do primeiro filho
-//beforeEnd = Dentro do element e apos seu ultimo filho
-//afterEnd = Após o element
-
 //Comparativo combustiveis
 let buttonCombustiveis = document.getElementById('combustiveis');
     buttonCombustiveis.addEventListener("click", combustiveis);
@@ -169,8 +179,7 @@ function mediaIdade(){
     let somarIdades = 0;
     let numeroInicio = 1;
     while (numeroInicio <= familiares) {
-        let idade = parseInt(prompt('Digite a idade '));
-            
+        let idade = parseInt(prompt('Digite a idade do familiar'));         
         somarIdades = somarIdades + idade;
         numeroInicio++
     }

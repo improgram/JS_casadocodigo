@@ -68,6 +68,12 @@ header {
     text-align: center; 
 }
 
+#object {
+    outline: 2px groove gold;   /*contorno*/
+    width: 380px;
+    height: 240px;
+}
+
 .container {
     padding: 2px; /* espaço da section para as margens */
     text-align: center;
@@ -107,16 +113,12 @@ header {
     text-decoration: none;
 }
 
-/*.btn:hover::before {
-    height: 40%;
-}*/
-
 #batimentos {
     background-image: url("https://cdn.pixabay.com/photo/2018/04/12/04/26/blood-pressure-3312513_960_720.png");
     background-size: cover; /* contain */
     display: flex;
     align-items: flex-end;
-    font-size: 16px;
+    font-size: 11px;
 }
 
 #copas { 
@@ -331,12 +333,6 @@ header {
     color:red;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiDOCyM2r8w2Nccj58-m15DrNLC_mqeP1_BA&usqp=CAU");
     font-size: 20px;
-}
-
-#object {
-    outline: 2px groove gold;   /*contorno*/
-    width: 380px;
-    height: 240px;
 }
 
 .footer {
